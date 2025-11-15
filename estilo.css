@@ -67,3 +67,17 @@ button:hover {
   padding: 10px;
   min-height: 40px;
 }
+
+/* Estilo Responsivo */
+@media (max-width: 480px) {
+    
+  .contenedor{
+    width: 320px;
+  }
+    
+  button{
+    width: 270px;
+    }
+
+}
+
