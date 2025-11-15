@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cajero Automático</title>
+  <link rel="stylesheet" href="./estilo.css" />
+</head>
+<body>
+  <div class="contenedor">
+    
+      <img src="./Imagenes/Logo.png" alt="CG2PRO Bank" width="300">
+      
+    
+
+    <!-- LOGIN -->
+    <div class="C1" id="login">
+      <p>Nombre de usuario:</p>
+      <input type="text" id="usuarioInput" placeholder="Ingrese usuario" />
+
+      <p>PIN:</p>
+      <input type="password" id="pinInput" maxlength="4" placeholder="****" />
+      <p>       </p>
+      <button id="btnIngresar">Ingresar</button>
+      <p id="mensajeLogin"></p>
+    </div>
+
+    <!-- MENÚ PRINCIPAL -->
+    <div id="menu" class="oculto">
+      <h2>Bienvenido, <span id="nombreUsuario"></span></h2>
+      <p>Saldo actual: $<span id="saldoActual"></span></p>
+
+      <div class="botonera">
+        <button id="btnConsultar">Consultar Saldo</button>
+        <button id="btnDepositar">Depositar</button>
+        <button id="btnRetirar">Retirar</button>
+        <button id="btnSalir">Salir</button>
+      </div>
+
+      <!-- Zona dinámica -->
+      <div id="operacion"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./cajero.js"></script>
+</body>
+</html>
+
